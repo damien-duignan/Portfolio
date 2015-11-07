@@ -126,19 +126,7 @@ app.controller('SkillsController', ['$scope', 'skills', function($scope, skills)
             level: 6
         },
     ];
-    $scope.viewSkills = [];
     $scope.skillsClass = ['language', 'frontend', 'tool', 'database', 'framework', 'os'];
-
-    /*$scope.skills.filter(function(obj){
-        for(var key in obj){
-            if(key != 'class'){
-                alert('hie');
-                delete obj.key;
-            }
-        }
-
-        return 1;
-    });*/
 
     $scope.addSkill = function(index){
         exists = 0;
@@ -157,10 +145,12 @@ app.controller('SkillsController', ['$scope', 'skills', function($scope, skills)
             });
         }
 
-        //$("#skillBarTest").removeClass("fillBar");
         $("div").removeClass("fillBar");
-        //$scope.viewSkills = sortByKey($scope.viewSkills, 'level');
     };
+
+    $scope.viewSkills = [];
+
+
 
     $scope.displayType = function(type){
         $scope.viewSkills = [];
@@ -188,24 +178,32 @@ app.controller('SkillsController', ['$scope', 'skills', function($scope, skills)
         $scope.viewSkills[index].selectedIndex = index;
         $("div").removeClass("fillBar");
     };
-    //$scope.what = 7;
     shuffleArray($scope.skills);
 
-    $scope.removeClass1 = function(){
-       // alert('In removeClass');
-        //$("div").removeClass("fillBar");
-    };
+    addDefaultSkills();
+
+    function addDefaultSkills(){
+        defaultSkills = ['Python', 'Django', 'Bootstrap', 'JavaScript', 'Perl', 'SQL', 'HTML5'];
+        indices = getIndexByKey('name', defaultSkills);
+        for(i=0;i<indices.length;i++){
+            $scope.addSkill(indices[i]);
+        }
+        $scope.viewSkills = sortByKey($scope.viewSkills, 'level');
+    }
+
+    function getIndexByKey(key, keyArray){
+        lookup = [];
+        for(i=0; i<keyArray.length; i++){
+            for(j=0;j<$scope.skills.length;j++){
+                if($scope.skills[j][key] == keyArray[i]){
+                    lookup.push(j);
+                }
+            }
+        }
+        return lookup;
+    }
 
 }]);
-
-app.directive('removeClass', function(){
-    return {
-        restrict: 'A',
-        link: function(scope,element, attrs){
-            element.removeClass(attrs.removeClass);
-        }
-    };
-});
 
 function sortByKey(array, key) {
     return array.sort(function(a, b) {
@@ -215,7 +213,7 @@ function sortByKey(array, key) {
 }
 
 function isInArray(value, array) {
-  return array.indexOf(value) > -1;
+    return array.indexOf(value) > -1;
 }
 
 function shuffleArray(array) {
@@ -232,4 +230,3 @@ function shuffleArray(array) {
 
   return array;
 }
-

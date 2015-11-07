@@ -17,6 +17,7 @@
                             <li><button type="button" class="btn" ng-click="displayType(class)" ng-repeat="class in skillsClass">{{class}}</button></li>
                         </ul>
                         <div class="col-md-9 col-md-pull-3" id="skillBarDiv">
+                            <!--<skill-button skill="list" ng-repeat="list in viewSkills"></skill-button>-->
                             <div ng-repeat="list in viewSkills" >
                                 <div class="list-group-item btn skill btn-ghost {{list.class}}bar text-left"
                                      remove-class="fillBar"
