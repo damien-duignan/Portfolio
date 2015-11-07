@@ -7,17 +7,16 @@
                         <h2>Skills & Expertise</h2>
                     </div>
                 </div>
-                {{skills1}}
                 <div class="row">
                     <ul class="list-inline col-xs-3 col-md-3">
                         <li class="list-group-item btn skill btn-ghost {{skill.class}}" ng-repeat="skill in skills" ng-click="addSkill($index)">{{ skill.name }}</li>
                     </ul>
                     <div class="col-xs-9 col-md-9">
-                        <ul class="list-inline col-md-3 col-md-push-9">
-                            <li><button type="button" class="btn" ng-click="displayType(class)" ng-repeat="class in skillsClass">{{class}}</button></li>
+                        <ul class="list-inline col-md-12">
+                            <li><button type="button" class="btn skill btn-ghost {{class}}" ng-click="displayType(class)" ng-repeat="class in skillsClass">{{class}}</button></li>
                         </ul>
-                        <div class="col-md-9 col-md-pull-3" id="skillBarDiv">
-                            <!--<skill-button skill="list" ng-repeat="list in viewSkills"></skill-button>-->
+                        <div class="col-md-12" id="skillBarDiv">
+                            <!--<skill-button skills="viewSkills"></skill-button>-->
                             <div ng-repeat="list in viewSkills" >
                                 <div class="list-group-item btn skill btn-ghost {{list.class}}bar text-left"
                                      remove-class="fillBar"

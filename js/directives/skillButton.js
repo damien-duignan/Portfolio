@@ -2,7 +2,7 @@ app.directive('skillButton', function(){
     return {
         restrict: 'E',
         scope: {
-            skill: '='
+            skills: '='
         },
         templateUrl: 'js/directives/skillButton.html'
     };

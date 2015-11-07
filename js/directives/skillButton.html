@@ -1,14 +1,16 @@
-<div class="list-group-item btn skill btn-ghost {{skill.class}}bar text-left"
-     remove-class="fillBar"
-     ng-class="{ 'transBar': $index == skill.selectedIndex, 'fillBar': $index != skill.selectedIndex}"
-     style="width:{{skill.levelClass}}0%; text-align: left;" ng-click="expandSkill($index)"
-        data-toggle="collapse" data-target="#{{skill.name}}" aria-expanded="false" aria-controls="{{skill.name}}" id="skillBarTest">
-    <span class="progress-type" style="left:0px; position: relative;">
-        {{selectedIndex}}
-        <i class="fa fa-times icons" ng-click="removeSkill($index)"></i>
-        {{skill.name}} | {{skill.level}}/10
-    </span>
-    <div class="collapse" id="{{skill.name}}">
-        {{skill.name}}
+<div ng-repeat="list in skills" >
+    <div class="list-group-item btn skill btn-ghost {{list.class}}bar text-left"
+         remove-class="fillBar"
+         ng-class="{ 'transBar': $index == list.selectedIndex, 'fillBar': $index != list.selectedIndex}"
+         style="width:{{list.levelClass}}0%; text-align: left;" ng-click="expandSkill($index)"
+            data-toggle="collapse" data-target="#{{list.name}}" aria-expanded="false" aria-controls="{{list.name}}" id="skillBarTest">
+        <span class="progress-type" style="left:0px; position: relative;">
+            {{selectedIndex}}
+            <i class="fa fa-times icons" ng-click="removeSkill($index)"></i>
+            {{list.name}} | {{list.level}}/10
+        </span>
+        <div class="collapse" id="{{list.name}}">
+            {{list.name}}
+        </div>
     </div>
 </div>

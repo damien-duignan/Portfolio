@@ -125,8 +125,13 @@ app.controller('SkillsController', ['$scope', 'skills', function($scope, skills)
             class: 'os',
             level: 6
         },
+        {
+            name: 'JSON',
+            class: 'database',
+            level: 7
+        },
     ];
-    $scope.skillsClass = ['language', 'frontend', 'tool', 'database', 'framework', 'os'];
+    $scope.skillsClass = getSkillCategory();
 
     $scope.addSkill = function(index){
         exists = 0;
@@ -199,6 +204,19 @@ app.controller('SkillsController', ['$scope', 'skills', function($scope, skills)
                     lookup.push(j);
                 }
             }
+        }
+        return lookup;
+    }
+
+    function getSkillCategory(){
+        lookup = []
+        terminator = 0;
+        while(terminator<$scope.skills.length){
+            var found = lookup.some(function (sl) {
+                return sl === $scope.skills[terminator].class;
+            });
+            if (!found) { lookup.push($scope.skills[terminator].class); }
+            terminator++;
         }
         return lookup;
     }
