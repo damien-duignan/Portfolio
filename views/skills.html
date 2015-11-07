@@ -1,0 +1,42 @@
+<div id="skills">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Skills & Expertise</h2>
+                    </div>
+                </div>
+                {{skills1}}
+                <div class="row">
+                    <ul class="list-inline col-xs-3 col-md-3">
+                        <li class="list-group-item btn skill btn-ghost {{skill.class}}" ng-repeat="skill in skills" ng-click="addSkill($index)">{{ skill.name }}</li>
+                    </ul>
+                    <div class="col-xs-9 col-md-9">
+                        <ul class="list-inline col-md-3 col-md-push-9">
+                            <li><button type="button" class="btn" ng-click="displayType(class)" ng-repeat="class in skillsClass">{{class}}</button></li>
+                        </ul>
+                        <div class="col-md-9 col-md-pull-3" id="skillBarDiv">
+                            <div ng-repeat="list in viewSkills" >
+                                <div class="list-group-item btn skill btn-ghost {{list.class}}bar text-left"
+                                     remove-class="fillBar"
+                                     ng-class="{ 'transBar': $index == list.selectedIndex, 'fillBar': $index != list.selectedIndex}"
+                                     style="width:{{list.levelClass}}0%; text-align: left;" ng-click="expandSkill($index)"
+                                        data-toggle="collapse" data-target="#{{list.name}}" aria-expanded="false" aria-controls="{{list.name}}" id="skillBarTest">
+                                    <span class="progress-type" style="left:0px; position: relative;">
+                                        {{selectedIndex}}
+                                        <i class="fa fa-times icons" ng-click="removeSkill($index)"></i>
+                                        {{list.name}} | {{list.level}}/10
+                                    </span>
+                                    <div class="collapse" id="{{list.name}}">
+                                        {{list.name}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+<div class="row">
+    <div class="col-sm-3">
+        <a href="{{listing.url}}"><img class="img-responsive" ng-src="{{listing.img}}"/></a>
+    </div>
+    <div class="col-sm-7">
+        <h4>{{listing.company}}</h4>
+        <p class="title">{{listing.title}}</p>
+        <div class="description">
+           <p ng-repeat="par in listing.description">{{par}}</p>
+        </div>
+    </div>
+    <div class="col-sm-2 sidebar">
+        <p class="location">{{listing.location}}</p>
+        <p class="date">{{listing.startDate | date:'MMM yyyy'}} - {{listing.endDate | date:'MMM yyyy'}}</p>
+    </div>
+</div>

@@ -1,0 +1,274 @@
+body {
+  background-color: #54B0F7;
+  font-family: Montserrat; }
+
+html {
+  overflow-y: scroll; }
+
+#main-body {
+  padding-top: 50px; }
+
+.skill {
+  margin: 2px;
+  padding: 3px 5px;
+  border-radius: 2px; }
+  .skill span {
+    vertical-align: middle;
+    display: inline-block;
+    float: none; }
+  .skill a {
+    text-decoration: none;
+    color: inherit; }
+
+.btn-ghost {
+  background-color: transparent;
+  border-color: #FFFFFF;
+  border-radius: 2px;
+  color: #FFFFFF;
+  /*font-size:18px;
+  line-height:1.33333;
+  padding:10px 16px;*/ }
+
+.language {
+  background-color: #46465e;
+  background-color: rgba(70, 70, 94, 0.2);
+  color: white; }
+  .language:hover {
+    background-color: rgba(70, 70, 94, 0.9);
+    color: white; }
+
+.frontend {
+  background-color: #2980b9;
+  background-color: rgba(41, 128, 185, 0.2);
+  color: white; }
+  .frontend:hover {
+    background-color: rgba(41, 128, 185, 0.9);
+    color: white; }
+
+.tool {
+  background-color: red;
+  background-color: rgba(255, 0, 0, 0.2);
+  color: white; }
+  .tool:hover {
+    background-color: rgba(255, 0, 0, 0.9);
+    color: white; }
+
+.framework {
+  background-color: green;
+  background-color: rgba(0, 128, 0, 0.2);
+  color: white; }
+  .framework:hover {
+    background-color: rgba(0, 128, 0, 0.9);
+    color: white; }
+
+.database {
+  background-color: orange;
+  background-color: rgba(255, 165, 0, 0.2);
+  color: white; }
+  .database:hover {
+    background-color: rgba(255, 165, 0, 0.9);
+    color: white; }
+
+.os {
+  background-color: pink;
+  background-color: rgba(255, 192, 203, 0.2);
+  color: white; }
+  .os:hover {
+    background-color: rgba(255, 192, 203, 0.9);
+    color: white; }
+
+.languagebar {
+  background-color: #46465e;
+  background-color: rgba(70, 70, 94, 0.6);
+  color: white; }
+  .languagebar:hover {
+    background-color: rgba(70, 70, 94, 0.9);
+    color: white; }
+
+.frontendbar {
+  background-color: #2980b9;
+  background-color: rgba(41, 128, 185, 0.6);
+  color: white; }
+  .frontendbar:hover {
+    background-color: rgba(41, 128, 185, 0.9);
+    color: white; }
+
+.toolbar {
+  background-color: red;
+  background-color: rgba(255, 0, 0, 0.6);
+  color: white; }
+  .toolbar:hover {
+    background-color: rgba(255, 0, 0, 0.9);
+    color: white; }
+
+.frameworkbar {
+  background-color: green;
+  background-color: rgba(0, 128, 0, 0.6);
+  color: white; }
+  .frameworkbar:hover {
+    background-color: rgba(0, 128, 0, 0.9);
+    color: white; }
+
+.databasebar {
+  background-color: orange;
+  background-color: rgba(255, 165, 0, 0.6);
+  color: white; }
+  .databasebar:hover {
+    background-color: rgba(255, 165, 0, 0.9);
+    color: white; }
+
+.osbar {
+  background-color: pink;
+  background-color: rgba(255, 192, 203, 0.6);
+  color: white; }
+  .osbar:hover {
+    background-color: rgba(255, 192, 203, 0.9);
+    color: white; }
+
+.progress {
+  position: relative; }
+
+.progress-type {
+  /*position: absolute;
+  left: 0px;
+  padding: 0px 10px 0px 0px;
+  color: rgb(255, 255, 255);
+  color: red;
+  background-color: rgba(0, 0, 0, 0.2);*/ }
+  .progress-type i {
+    padding: 0px 5px 0px 5px;
+    cursor: pointer; }
+
+.progress > .progress-completed {
+  position: absolute;
+  right: 0px;
+  padding: 0px 10px 0px 10px; }
+
+.fillBar {
+  -webkit-animation: progressBar 1.5s ease-in-out;
+  -webkit-animation-fill-mode: both;
+  -moz-animation: progressBar 1.5s ease-in-out;
+  -moz-animation-fill-mode: both;
+  animation-delay: -0.6s; }
+
+.fillBar:after {
+  -webkit-animation: '';
+  -webkit-animation-fill-mode: '';
+  -moz-animation: '';
+  -moz-animation-fill-mode: '';
+  animation-delay: ''; }
+
+.transBar {
+  -webkit-transition: width 1s;
+  /* For Safari 3.1 to 6.0 */
+  transition: width 1s; }
+
+/*.fillBar:hover {
+    width: 100% !important;
+}*/
+.testan {
+  width: 100px;
+  height: 100px;
+  background: red;
+  -webkit-transition: width 2s;
+  /* For Safari 3.1 to 6.0 */
+  transition: width 2s; }
+
+.testan:hover {
+  width: 300px; }
+
+@-webkit-keyframes progressBar {
+  0% {
+    width: 0; } }
+@-moz-keyframes progressBar {
+  0% {
+    width: 0; } }
+.list-group-horizontal .list-group-item {
+  display: inline-block; }
+
+.skillInfo {
+  /*background-color: #282828;
+  float: clear;*/ }
+
+.skillImg {
+  border-radius: 50%;
+  border: 5px;
+  border-color: green;
+  border-style: solid; }
+
+#work h2 {
+  font-style: italic; }
+#work h4 {
+  color: #DF4446; }
+#work .sidebar {
+  font-family: "Helvetica";
+  font-size: 13px; }
+  #work .sidebar .location {
+    font-weight: bold;
+    color: #444444; }
+  #work .sidebar .date {
+    color: #999999; }
+#work .workRow {
+  padding-bottom: 10px; }
+#work .title {
+  font-style: italic;
+  font-weight: bold; }
+#work .description {
+  color: #999999; }
+
+html, body {
+  height: 100%; }
+
+#holder {
+  min-height: 100%;
+  position: relative; }
+
+#body {
+  padding-bottom: 40px;
+  height: 5300px; }
+
+#footer {
+  background-color: #444444;
+  bottom: 0;
+  height: 40px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  color: #FFFFFF;
+  line-height: 40px; }
+
+#home {
+  background-color: #DF4446;
+  color: white;
+  height: calc(100vh - 50px); }
+  #home h1 {
+    margin-top: 10%;
+    font-size: 50px; }
+  #home h2 {
+    font-size: 30px; }
+  #home img {
+    border-radius: 50%;
+    border: 2px solid #444444; }
+
+.col-centered {
+  float: none;
+  margin-left: auto;
+  margin-right: auto; }
+
+#progressbar1 {
+  background-color: transparent;
+  padding: 2px;
+  border-color: #FFFFFF;
+  color: black;
+  border-radius: 2px;
+  border-style: solid;
+  border-width: 2px;
+  margin: 5px; }
+
+#progressbar1 > div {
+  background-color: #fff;
+  width: 40%;
+  /* Adjust with JavaScript */
+  height: 18px; }
+
+/*# sourceMappingURL=style.css.map */
