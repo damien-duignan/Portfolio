@@ -131,6 +131,8 @@ app.controller('SkillsController', ['$scope', 'skills', function($scope, skills)
             level: 7
         },
     ];
+
+    shuffleArray($scope.skills);
     $scope.skillsClass = getSkillCategory();
 
     $scope.addSkill = function(index){
@@ -183,7 +185,6 @@ app.controller('SkillsController', ['$scope', 'skills', function($scope, skills)
         $scope.viewSkills[index].selectedIndex = index;
         $("div").removeClass("fillBar");
     };
-    shuffleArray($scope.skills);
 
     addDefaultSkills();
 

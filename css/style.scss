@@ -75,25 +75,29 @@ html{
 		color: white;
 	}
 }
+@mixin skillCategories($override:''){
+	.#{language$override}{
+		@include skillColors($languageColor, $skillOpacity);
+	}
+	.#{frontend$override}{
+		@include skillColors($frontendColor, $skillOpacity);
+	}
+	.#{tool$override}{
+		@include skillColors($toolColor, $skillOpacity);
+	}
+	.#{framework$override}{
+		@include skillColors($frameworkColor, $skillOpacity);
+	}
+	.#{database$override}{
+		@include skillColors($databaseColor, $skillOpacity);
+	}
+	.#{os$override}{
+		@include skillColors($osColor, $skillOpacity);
+	}
+}
 
-.language{
-	@include skillColors($languageColor, $skillOpacity);
-}
-.frontend{
-	@include skillColors($frontendColor, $skillOpacity);
-}
-.tool{
-	@include skillColors($toolColor, $skillOpacity);
-}
-.framework{
-	@include skillColors($frameworkColor, $skillOpacity);
-}
-.database{
-	@include skillColors($databaseColor, $skillOpacity);
-}
-.os{
-	@include skillColors($osColor, $skillOpacity);
-}
+@include skillCategories();
+//@include skillCategories('bar');
 
 .languagebar{
 	@include skillColors($languageColor, $barOpacity);
@@ -158,23 +162,6 @@ html{
     transition: width 1s;
 }
 
-/*.fillBar:hover {
-    width: 100% !important;
-}*/
-
-
-.testan {
-    width: 100px;
-    height: 100px;
-    background: red;
-    -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
-    transition: width 2s;
-}
-
-.testan:hover {
-    width: 300px;
-}
-
 @-webkit-keyframes progressBar {
   0% { width: 0; }
   //100% { width: 100%; }
@@ -187,18 +174,6 @@ html{
 
 .list-group-horizontal .list-group-item {
     display: inline-block;
-}
-
-.skillInfo{
-	/*background-color: #282828;
-	float: clear;*/
-}
-
-.skillImg{
-	border-radius:50%;
-	border: 5px;
-	border-color: green;
-	border-style: solid;
 }
 
 #work{

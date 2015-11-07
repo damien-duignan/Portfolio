@@ -163,20 +163,6 @@ html {
   /* For Safari 3.1 to 6.0 */
   transition: width 1s; }
 
-/*.fillBar:hover {
-    width: 100% !important;
-}*/
-.testan {
-  width: 100px;
-  height: 100px;
-  background: red;
-  -webkit-transition: width 2s;
-  /* For Safari 3.1 to 6.0 */
-  transition: width 2s; }
-
-.testan:hover {
-  width: 300px; }
-
 @-webkit-keyframes progressBar {
   0% {
     width: 0; } }
@@ -185,16 +171,6 @@ html {
     width: 0; } }
 .list-group-horizontal .list-group-item {
   display: inline-block; }
-
-.skillInfo {
-  /*background-color: #282828;
-  float: clear;*/ }
-
-.skillImg {
-  border-radius: 50%;
-  border: 5px;
-  border-color: green;
-  border-style: solid; }
 
 #work h2 {
   font-style: italic; }

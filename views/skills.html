@@ -13,7 +13,7 @@
                     </ul>
                     <div class="col-xs-9 col-md-9">
                         <ul class="list-inline col-md-12">
-                            <li><button type="button" class="btn skill btn-ghost {{class}}" ng-click="displayType(class)" ng-repeat="class in skillsClass">{{class}}</button></li>
+                            <li><button type="button" class="btn skill btn-ghost {{class}}bar" ng-click="displayType(class)" ng-repeat="class in skillsClass">{{class | capitalize}}</button></li>
                         </ul>
                         <div class="col-md-12" id="skillBarDiv">
                             <!--<skill-button skills="viewSkills"></skill-button>-->
