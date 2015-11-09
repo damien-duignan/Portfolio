@@ -1,5 +1,5 @@
 body {
-  background-color: #969191;
+  background-color: #FFFFFF;
   font-family: Montserrat; }
 
 html {
@@ -172,24 +172,27 @@ html {
 .list-group-horizontal .list-group-item {
   display: inline-block; }
 
-#work h2 {
-  font-style: italic; }
-#work h4 {
+#work h2, #education h2, #skills h2 {
+  padding-top: 30px;
+  font-size: 54px;
+  text-align: center;
   color: #DF4446; }
-#work .sidebar {
+#work h3, #education h3, #skills h3 {
+  font-size: 28px;
+  color: #DF4446; }
+#work .sidebar, #education .sidebar, #skills .sidebar {
   font-family: "Helvetica";
   font-size: 13px; }
-  #work .sidebar .location {
-    font-weight: bold;
+  #work .sidebar .location, #education .sidebar .location, #skills .sidebar .location {
     color: #444444; }
-  #work .sidebar .date {
+  #work .sidebar .date, #education .sidebar .date, #skills .sidebar .date {
     color: #999999; }
-#work .workRow {
+#work .workRow, #education .workRow, #skills .workRow {
   padding-bottom: 10px; }
-#work .title {
+#work .title, #education .title, #skills .title {
   font-style: italic;
   font-weight: bold; }
-#work .description {
+#work .description, #education .description, #skills .description {
   color: #999999; }
 
 html, body {
@@ -214,22 +217,47 @@ html, body {
   line-height: 40px; }
 
 #home {
-  background-color: #DF4446;
   color: white;
-  height: calc(100vh - 50px); }
+  height: calc(100vh - 50px);
+  background: url("http://cdn.mysitemyway.com/etc-mysitemyway/backgrounds/legacy-previews/backgrounds/scrapbook-sunburst/scrapbook-sunburst-001202-gray-black.jpg");
+  background: no-repeat center right fixed url("../img/guitar2.jpg");
+  color: white;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  min-height: fill-content;
+  z-index: 1; }
   #home h1 {
-    margin-top: 10%;
     font-size: 50px; }
   #home h2 {
     font-size: 30px; }
   #home img {
     border-radius: 50%;
-    border: 2px solid #444444; }
+    border: 5px solid; }
+
+#experience, #skills {
+  padding-bottom: 50px; }
+
+#skills {
+  background: url("../img/guitar2.jpg");
+  background: url("../img/guitar2.jpg") 100% 50%/cover fixed no-repeat; }
+
+/* centered columns styles */
+.row-centered {
+  text-align: center; }
 
 .col-centered {
+  display: inline-block;
   float: none;
-  margin-left: auto;
-  margin-right: auto; }
+  /* reset the text-align */
+  text-align: left;
+  /* inline-block space fix */
+  margin-right: -4px; }
+
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none; }
 
 #progressbar1 {
   background-color: transparent;
@@ -246,5 +274,18 @@ html, body {
   width: 40%;
   /* Adjust with JavaScript */
   height: 18px; }
+
+/*#body{
+	width: 70%;
+   	margin-left: auto;
+   	margin-right: auto;
+}*/
+@media (min-width: 1200px) {
+  #body .container {
+    width: 65%; } }
+hr {
+  margin: 40px 0px;
+  border-color: #727878;
+  opacity: 0.2; }
 
 /*# sourceMappingURL=style.css.map */

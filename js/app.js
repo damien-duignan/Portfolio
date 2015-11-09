@@ -1,6 +1,6 @@
-var app = angular.module('PortfolioApp', ['ngRoute']);
+var app = angular.module('PortfolioApp', []);
 
-app.config(function($routeProvider){
+/*app.config(function($routeProvider){
     $routeProvider
     .when('/', {
         controller: 'HomeController',
@@ -22,7 +22,11 @@ app.config(function($routeProvider){
         controller: 'XPController',
         templateUrl: 'views/experience.html'
     })
+    .when('/education', {
+        controller: 'EducationController',
+        templateUrl: 'views/education.html'
+    })
     .otherwise({
         redirectTo: '/'
     });
-});
+});*/

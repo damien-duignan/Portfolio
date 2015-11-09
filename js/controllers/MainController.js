@@ -1,4 +1,4 @@
-app.controller('MainController', ['$scope', function($scope){
+app.controller('MainController', ['$scope', '$location', '$anchorScroll', function($scope, $location, $anchorScroll){
 	$scope.name = 'Damien Duignan';
 	$scope.job = 'Software Developer';
 	$scope.about = 'Software Developer based in Dublin';
@@ -24,4 +24,8 @@ app.controller('MainController', ['$scope', function($scope){
  			path: 'skills'
  		}
  	];
+    $scope.scrollTo = function(id) {
+        $location.hash(id);
+        $anchorScroll();
+    }
 }]);

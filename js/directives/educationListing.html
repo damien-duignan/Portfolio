@@ -1,13 +1,11 @@
 <div class="row">
     <div class="col-sm-4">
-        <!--<a href="{{listing.url}}"><img class="img-responsive" ng-src="{{listing.img}}"/></a>-->
-
-        <h4 class="title">{{listing.company}}</h4>
+        <h4 class="title">{{listing.school}}</h4>
         <p class="location">{{listing.location}}</p>
         <p class="date">{{listing.startDate | date:'MMM yyyy'}} - {{listing.endDate | date:'MMM yyyy'}}</p>
     </div>
     <div class="col-sm-8">
-        <h4 class="title">{{listing.role}} - {{listing.title}}</h4>
+        <h4 class="title">{{listing.course}}</h4>
         <div class="description">
            <p ng-repeat="par in listing.description">{{par}}</p>
         </div>
