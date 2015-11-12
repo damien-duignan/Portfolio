@@ -1,7 +1,7 @@
 app.controller('EducationController', ['$scope', function($scope){
     $scope.schools = [
         {
-            school: 'AIT',
+            school: 'Athlone IT',
             course: 'Bsc (Hons) Software Design (Games Development)',
             role: 'Software Developer',
             location: 'Westmeath, Ireland',

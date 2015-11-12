@@ -4,6 +4,7 @@ $darkGrey: #444444;
 $lightGrey: #999999;
 $myRed: #DF4446;
 $headerPadding: 50px;
+$superLightGrey: #F7F7F7;
 
 //skills colors
 $languageColor: #46465e;
@@ -22,12 +23,6 @@ $levelOpacity: 0.2;
 body{
 	background-color: $bodyBackground;
 	font-family: Montserrat;
-	//background: url('http://i765.photobucket.com/albums/xx291/just-meller/national%20geografic/Birds-national-geographic-6873734-1600-1200.jpg');
-	//background: url('http://www.planwallpaper.com/static/images/recycled_texture_background_by_sandeep_m-d6aeau9_PZ9chud.jpg');
-	//background: url('http://i.ytimg.com/vi/j22DmsZEv30/maxresdefault.jpg');
-	//background: url('http://i70.photobucket.com/albums/i119/tiff_pics/0728060440.jpg');
-	//background: url('http://www.hdwalley.com/wp-content/uploads/2015/10/green_background_wonderful_backgrounds_2043_high_definition.jpg');
-	//background: url('http://cdn.mysitemyway.com/etc-mysitemyway/backgrounds/legacy-previews/backgrounds/scrapbook-sunburst/scrapbook-sunburst-001202-gray-black.jpg');
 }
 html{
 	overflow-y: scroll;
@@ -60,9 +55,6 @@ html{
 	border-color:#FFFFFF;
 	border-radius:2px;
 	color:#FFFFFF;
-	/*font-size:18px;
-	line-height:1.33333;
-	padding:10px 16px;*/
 }
 
 @mixin skillColors($color, $transparency:1){
@@ -175,7 +167,7 @@ html{
     display: inline-block;
 }
 
-#work, #education, #skills{
+#work, #education, #skills, #contact, #about, #projects{
 	h2{
 		padding-top:30px;
 		font-size: 54px;
@@ -213,6 +205,32 @@ html{
 	}
 }
 
+#contact{
+	i{
+		font-size:34px;
+	}
+	ul.no-bullets {
+	  	list-style-type:none;
+	  	margin:0;
+	  	padding:0;
+	}
+	.valign{
+		vertical-align:middle;
+	}
+	a{
+		text-decoration:none;
+		color:inherit;
+	}
+	a:hover{
+		opacity:0.7;
+	}
+	li{
+		padding: 10px 0px 10px 0px;
+	}
+	padding-bottom:60px;
+    background-color: $darkGrey;
+    color:white;
+}
 
 
 html,body{
@@ -225,8 +243,8 @@ html,body{
 }
 
 #body {
-    padding-bottom: 40px;
-    height:5300px;
+    //padding-bottom: 40px;
+    //height:5300px;
 }
 
 #footer{
@@ -244,10 +262,10 @@ html,body{
 	color: white;
 	height:calc(100vh - 50px);
 	h1{
-		font-size:50px;
+		font-size:58px;
 	}
 	h2{
-		font-size:30px;
+		font-size:36px;
 	}
 	img{
 		border-radius: 50%;
@@ -260,18 +278,34 @@ html,body{
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	min-height: fill-content;
-	z-index:1;
 }
 
-#experience, #skills{
+.cover-wrap {
+  position: relative;
+}
+.center-title {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align:center;
+}
+
+#about{
+	img{
+		border-radius: 50%;
+		border:5px solid;
+	}
+	background-color:$superLightGrey;
+	//border-bottom: 1px solid rgba(0, 0, 0, .4);
+}
+
+#experience, #skills, #about{
 	padding-bottom:50px;
 }
 
 #skills{
-	//background-color:#d0d0d0;
-	//background: url('http://cdn.mysitemyway.com/etc-mysitemyway/backgrounds/legacy-previews/backgrounds/scrapbook-sunburst/scrapbook-sunburst-001202-gray-black.jpg');
-	background: url('../img/guitar2.jpg');
-	background:url('../img/guitar2.jpg') 100% 50% / cover fixed no-repeat;
+	background-color:$superLightGrey;
 }
 
 /* centered columns styles */
@@ -294,23 +328,6 @@ html,body{
 }
 
 
-#progressbar1 {
-	background-color: transparent;
-	padding: 2px;
-	border-color:#FFFFFF;
-	color:black;
-	border-radius:2px;
-	border-style: solid;
-	border-width: 2px;
-	margin:5px;
-}
-
-#progressbar1 > div {
-	background-color: #fff;
-	width: 40%; /* Adjust with JavaScript */
-	height: 18px;
-}
-
 /*#body{
 	width: 70%;
    	margin-left: auto;
@@ -329,5 +346,5 @@ html,body{
 hr {
 	margin: 40px 0px;
     border-color: #727878;
-    opacity: 0.2;
+    opacity: 0.4;
 }

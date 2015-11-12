@@ -1,8 +1,11 @@
 app.controller('ProjectsController', ['$scope', function($scope){
-    $scope.projects = [
+    $scope.description = 'In my spare time, I try to keep active to keep my skills updated ' +
+    					'and keeping with current trends. Below are some examples of what I am doing.'
+    $scope.tech = [
 		{
-			name: 'Angular',
-			description: 'Trying Angular from Proj',
+			name: 'AngularJS',
+			description: 'AngularJS is an open source MVC JavaScript Framework maintained by Google. ' +
+			'It provides client-side MVC architectures, which aid in the development of single page applications.',
 			img: 'img/angularjs.png'
 		},
 		{
@@ -16,9 +19,3 @@ app.controller('ProjectsController', ['$scope', function($scope){
 		}
 	];
 }]);
-
-/*app.controller('ProjectsController', ['$scope', 'books', function($scope, books) {
-    books.success(function(data){
-        $scope.projects = data;
-    });
-}]);*/
