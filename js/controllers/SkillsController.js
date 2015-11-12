@@ -33,10 +33,10 @@ app.controller('SkillsController', ['$scope', 'skills', function($scope, skills)
         {
             name: 'Django',
             class: 'framework',
-            level: 6
+            level: 7
         },
         {
-            name: 'ASP',
+            name: '.NET',
             class: 'framework',
             level: 3
         },
@@ -48,7 +48,7 @@ app.controller('SkillsController', ['$scope', 'skills', function($scope, skills)
         {
             name: 'AngularJS',
             class: 'framework',
-            level: 5
+            level: 6
         },
         {
             name: 'Bootstrap',
@@ -189,7 +189,7 @@ app.controller('SkillsController', ['$scope', 'skills', function($scope, skills)
     addDefaultSkills();
 
     function addDefaultSkills(){
-        defaultSkills = ['Python', 'Django', 'Bootstrap', 'JavaScript', 'Perl', 'SQL', 'HTML5'];
+        defaultSkills = ['Python', 'Django', 'Bootstrap', 'JavaScript', 'AngularJS', 'SQL', 'HTML5'];
         indices = getIndexByKey('name', defaultSkills);
         for(i=0;i<indices.length;i++){
             $scope.addSkill(indices[i]);

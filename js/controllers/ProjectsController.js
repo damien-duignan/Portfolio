@@ -10,12 +10,25 @@ app.controller('ProjectsController', ['$scope', function($scope){
 		},
 		{
 			name: 'Django',
-			description: 'Not Django Unchained',
+			description: 'Django is an open source MVC framework written and developed in Python. ' +
+			'It comes wth a lot of built in features to aid in the set up of your web application.',
 			img: 'img/django.png'
 		},
 		{
 			name: 'Bootstrap',
-			description: 'Responsive Design'
+			description: 'Bootstrap is a responsive design framework built by Twitter. It simplifies the ' +
+			'creation of responsive websites.'
+		}
+	];
+
+    $scope.projects = [
+		{
+			name: 'Attendance App',
+			description: 'For my final year project I created an Android application which allows the ' +
+			'parent to track their children\'s progress in national or secondary school. ' +
+			'The application provides a real-time representation of the progress being made by the student.' +
+			'The system utilizes technologies such as MySQL, Apache HTTP Server, PHP and JSON',
+			img: 'img/angularjs.png'
 		}
 	];
 }]);

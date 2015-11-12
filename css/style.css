@@ -5,9 +5,6 @@ body {
 html {
   overflow-y: scroll; }
 
-#main-body {
-  padding-top: 50px; }
-
 .skill {
   margin: 2px;
   padding: 3px 5px;
@@ -43,19 +40,19 @@ html {
     color: white; }
 
 .tool {
-  background-color: red;
-  background-color: rgba(255, 0, 0, 0.2);
+  background-color: #C10003;
+  background-color: rgba(193, 0, 3, 0.2);
   color: white; }
   .tool:hover {
-    background-color: rgba(255, 0, 0, 0.9);
+    background-color: rgba(193, 0, 3, 0.9);
     color: white; }
 
 .framework {
-  background-color: green;
-  background-color: rgba(0, 128, 0, 0.2);
+  background-color: #0E7143;
+  background-color: rgba(14, 113, 67, 0.2);
   color: white; }
   .framework:hover {
-    background-color: rgba(0, 128, 0, 0.9);
+    background-color: rgba(14, 113, 67, 0.9);
     color: white; }
 
 .database {
@@ -67,11 +64,11 @@ html {
     color: white; }
 
 .os {
-  background-color: pink;
-  background-color: rgba(255, 192, 203, 0.2);
+  background-color: #FF8955;
+  background-color: rgba(255, 137, 85, 0.2);
   color: white; }
   .os:hover {
-    background-color: rgba(255, 192, 203, 0.9);
+    background-color: rgba(255, 137, 85, 0.9);
     color: white; }
 
 .languagebar {
@@ -91,19 +88,19 @@ html {
     color: white; }
 
 .toolbar {
-  background-color: red;
-  background-color: rgba(255, 0, 0, 0.6);
+  background-color: #C10003;
+  background-color: rgba(193, 0, 3, 0.6);
   color: white; }
   .toolbar:hover {
-    background-color: rgba(255, 0, 0, 0.9);
+    background-color: rgba(193, 0, 3, 0.9);
     color: white; }
 
 .frameworkbar {
-  background-color: green;
-  background-color: rgba(0, 128, 0, 0.6);
+  background-color: #0E7143;
+  background-color: rgba(14, 113, 67, 0.6);
   color: white; }
   .frameworkbar:hover {
-    background-color: rgba(0, 128, 0, 0.9);
+    background-color: rgba(14, 113, 67, 0.9);
     color: white; }
 
 .databasebar {
@@ -115,11 +112,11 @@ html {
     color: white; }
 
 .osbar {
-  background-color: pink;
-  background-color: rgba(255, 192, 203, 0.6);
+  background-color: #FF8955;
+  background-color: rgba(255, 137, 85, 0.6);
   color: white; }
   .osbar:hover {
-    background-color: rgba(255, 192, 203, 0.9);
+    background-color: rgba(255, 137, 85, 0.9);
     color: white; }
 
 .progress {
@@ -212,6 +209,10 @@ html {
   #contact li {
     padding: 10px 0px 10px 0px; }
 
+#projects h4 {
+  font-weight: bold;
+  font-style: italic; }
+
 html, body {
   height: 100%; }
 
@@ -231,8 +232,7 @@ html, body {
 
 #home {
   color: white;
-  height: calc(100vh - 50px);
-  background: url("http://cdn.mysitemyway.com/etc-mysitemyway/backgrounds/legacy-previews/backgrounds/scrapbook-sunburst/scrapbook-sunburst-001202-gray-black.jpg");
+  height: calc(100vh);
   background: no-repeat center right fixed url("../img/guitar2.jpg");
   color: white;
   -webkit-background-size: cover;
@@ -263,7 +263,7 @@ html, body {
     border-radius: 50%;
     border: 5px solid; }
 
-#experience, #skills, #about {
+#experience, #skills, #about, #projects {
   padding-bottom: 50px; }
 
 #skills {
@@ -298,5 +298,15 @@ hr {
   margin: 40px 0px;
   border-color: #727878;
   opacity: 0.4; }
+
+.navbar {
+  /*background-color: transparent;
+  background: transparent;
+  border-color: transparent;*/
+  border: none;
+  opacity: 0.9; }
+
+.navbar li {
+  color: #000; }
 
 /*# sourceMappingURL=style.css.map */

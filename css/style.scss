@@ -9,10 +9,10 @@ $superLightGrey: #F7F7F7;
 //skills colors
 $languageColor: #46465e;
 $frontendColor: #2980b9;
-$toolColor: red;
-$frameworkColor: green;
+$toolColor: #C10003;
+$frameworkColor: #0E7143;
 $databaseColor: orange;
-$osColor: pink;
+$osColor: #FF8955;
 
 
 //opacity
@@ -30,7 +30,7 @@ html{
 
 
 #main-body{
-	padding-top:$headerPadding;
+	//padding-top:$headerPadding;
 
 }
 .skill{
@@ -232,6 +232,13 @@ html{
     color:white;
 }
 
+#projects{
+	h4{
+		font-weight: bold;
+		font-style: italic;
+	}
+}
+
 
 html,body{
     height: 100%
@@ -260,7 +267,7 @@ html,body{
 
 #home{
 	color: white;
-	height:calc(100vh - 50px);
+	height:calc(100vh);
 	h1{
 		font-size:58px;
 	}
@@ -271,7 +278,6 @@ html,body{
 		border-radius: 50%;
 		border:5px solid ;
 	}
-	background: url('http://cdn.mysitemyway.com/etc-mysitemyway/backgrounds/legacy-previews/backgrounds/scrapbook-sunburst/scrapbook-sunburst-001202-gray-black.jpg');
 	background: no-repeat center right fixed url('../img/guitar2.jpg');
 	color: white;
 	-webkit-background-size: cover;
@@ -300,7 +306,7 @@ html,body{
 	//border-bottom: 1px solid rgba(0, 0, 0, .4);
 }
 
-#experience, #skills, #about{
+#experience, #skills, #about, #projects{
 	padding-bottom:50px;
 }
 
@@ -348,3 +354,17 @@ hr {
     border-color: #727878;
     opacity: 0.4;
 }
+
+nav{
+	//opacity:0.5;
+}
+
+.navbar {
+   /*background-color: transparent;
+   background: transparent;
+   border-color: transparent;*/
+   border:none;
+   opacity:0.9;
+}
+
+.navbar li { color: #000 }
