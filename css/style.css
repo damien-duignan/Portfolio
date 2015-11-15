@@ -234,10 +234,8 @@ html, body {
   color: white;
   height: calc(100vh);
   background: no-repeat center right fixed url("../img/guitar.jpg");
+  background-size: 100%;
   color: white;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   min-height: fill-content; }
   #home h1 {
     padding-top: 40px;
