@@ -282,14 +282,11 @@ html,body{
 		border:5px solid ;
 	}
 
-	background: no-repeat center right fixed url('../img/guitar.jpg');
-	background-size: 100%;
-
-
+	background: transparent url("../img/guitar.jpg") no-repeat fixed right center / cover;
 	color: white;
-	//-webkit-background-size: cover;
-	//-moz-background-size: cover;
-	//-o-background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	min-height: fill-content;
 	hr{
 		margin: 15px 0px;
