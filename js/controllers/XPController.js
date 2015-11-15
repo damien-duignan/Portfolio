@@ -27,7 +27,7 @@ app.controller('XPController', ['$scope', function($scope){
             endDate: new Date(2012, 05, 30),
             description: [
                 'Kingspan is a global leader in high performance insulation, building fabric, and solar integrated building envelopes.',
-                'My main job was to create internal websites for Kingspan. I was using C#, ASP.NET,HTML and SQL Server to create web pages and applications. For one of these websites, I created a CMS from scratch so that the page could be updated easily without changing the source code.'
+                'My main responsibility was to create internal web applications for Kingspan. I was using C#, ASP.NET,HTML and SQL Server to create web pages and applications. For one of these websites, I created a CMS from scratch so that the page could be updated easily without changing the source code.'
             ]
         },
         {
@@ -41,7 +41,7 @@ app.controller('XPController', ['$scope', function($scope){
             endDate: new Date(2012, 07, 24),
             description: [
                 'Following the completion of my internship, I was offered a position for the summer.',
-                'During the two months, as part of a team of two, I was responsible for getting SharePoint running within Kingspan.',
+                'As part of a team of two, I was responsible for integrating SharePoint within Kingspan.',
                 'My main responsibility was to create SharePoint web parts and deploy them according to the specifications I was given.'
             ]
         }

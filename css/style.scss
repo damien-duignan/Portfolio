@@ -6,13 +6,15 @@ $myRed: #DF4446;
 $headerPadding: 50px;
 $superLightGrey: #F7F7F7;
 
+$projectGrey: #F0F0F0;
+
 //skills colors
 $languageColor: #46465e;
 $frontendColor: #2980b9;
 $toolColor: #C10003;
 $frameworkColor: #0E7143;
-$databaseColor: orange;
-$osColor: #FF8955;
+$databaseColor: #E29833;
+$osColor: #050505;
 
 
 //opacity
@@ -79,7 +81,7 @@ html{
 	.#{framework$override}{
 		@include skillColors($frameworkColor, $skillOpacity);
 	}
-	.#{database$override}{
+	.#{data$override}{
 		@include skillColors($databaseColor, $skillOpacity);
 	}
 	.#{os$override}{
@@ -102,7 +104,7 @@ html{
 .frameworkbar{
 	@include skillColors($frameworkColor, $barOpacity);
 }
-.databasebar{
+.databar{
 	@include skillColors($databaseColor, $barOpacity);
 }
 .osbar{
@@ -269,6 +271,7 @@ html,body{
 	color: white;
 	height:calc(100vh);
 	h1{
+		padding-top:40px;
 		font-size:58px;
 	}
 	h2{
@@ -278,12 +281,19 @@ html,body{
 		border-radius: 50%;
 		border:5px solid ;
 	}
-	background: no-repeat center right fixed url('../img/guitar2.jpg');
+
+	background: no-repeat center right fixed url('../img/guitar.jpg');
 	color: white;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	min-height: fill-content;
+	hr{
+		margin: 15px 0px;
+		border-color: #fff;
+		opacity: 1;
+		//border: 5px solid;
+	}
 }
 
 .cover-wrap {
@@ -301,6 +311,7 @@ html,body{
 	img{
 		border-radius: 50%;
 		border:5px solid;
+		margin-bottom:20px;
 	}
 	background-color:$superLightGrey;
 	//border-bottom: 1px solid rgba(0, 0, 0, .4);
@@ -368,3 +379,33 @@ nav{
 }
 
 .navbar li { color: #000 }
+
+.project{
+	//margin: 0px 10px 0px 10px;
+	.content{
+		background-color:$projectGrey;
+		padding: 10px 20px 10px 20px;
+		//margin: 10px 0px 10px 0px;
+		margin-top:10px;
+		margin-bottom: 10px;
+		h4{
+			//font-size:24px;
+		}
+	}
+	.image{
+		//background-color:green;
+	}
+	.project-right{
+		h4{
+			text-align:right;
+		}
+		p{
+			text-align:justify
+		}
+	}
+	hr {
+		margin: 15px 0px;
+		border-color: #727878;
+		opacity: 0.4;
+	}
+}

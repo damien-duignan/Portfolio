@@ -1,14 +1,15 @@
 <div id="projects">
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12"><div class="row">
                 <h2>Personal Work</h2>
                 <div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 text-center">{{description}}</div>
+                </div>
+                <hr>
                 <div class="col-md-12">
-                    <hr>
                     <h3>Technologies</h3>
                     <div class="row">
-                        <project-list listing="t" ng-repeat="t in tech"></project-list>
+                        <project-list alternate="{{$odd}}" listing="t" ng-repeat="t in tech"></project-list>
                     </div>
                     <h3>Past Projects</h3>
                     <div class="row">

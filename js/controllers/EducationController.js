@@ -10,7 +10,7 @@ app.controller('EducationController', ['$scope', function($scope){
             description: [
                 'I chose this course because of my interest in gaming and technology. The course was primarily core Software Development modules with a specialized focus on games development.',
                 'The course focused on Java as our introduction to programming, but as we advanced, we were introduced to PHP, Python, JavaScript.',
-                'We were introduced to best practices in programming - OOP, Software Testing, Requirements Specifications, Project Management.',
+                'We were introduced to best practices in programming - OOP, Software Testing, Requirements Specifications and Project Management.',
                 ''
             ]
         },
@@ -22,7 +22,9 @@ app.controller('EducationController', ['$scope', function($scope){
             startDate: new Date(2003, 09, 00),
             endDate: new Date(2009, 05, 00),
             description: [
-                'During my time in secondary school, I took an interest in more technical and practical subjects. I enjoyed Maths, Engineering, Design & Communication Graphics, Physics.'
+                'During my time in secondary school, I took an interest in more technical' +
+                ' and practical subjects. I enjoyed Maths, Engineering, Design & Communication ' +
+                'Graphics, and Physics.'
             ]
         }
     ];

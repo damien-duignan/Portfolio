@@ -8,7 +8,7 @@ app.controller('SkillsController', ['$scope', 'skills', function($scope, skills)
         {
             name: 'Python',
             class: 'language',
-            level: 7
+            level: 8
         },
         {
             name: 'Perl',
@@ -62,7 +62,7 @@ app.controller('SkillsController', ['$scope', 'skills', function($scope, skills)
         },
         {
             name: 'SQL',
-            class: 'database',
+            class: 'data',
             level: 8
         },
         {
@@ -77,12 +77,12 @@ app.controller('SkillsController', ['$scope', 'skills', function($scope, skills)
         },
         {
             name: 'Redis',
-            class: 'database',
+            class: 'data',
             level: 5
         },
         {
             name: 'MongoDB',
-            class: 'database',
+            class: 'data',
             level: 5
         },
         {
@@ -127,7 +127,7 @@ app.controller('SkillsController', ['$scope', 'skills', function($scope, skills)
         },
         {
             name: 'JSON',
-            class: 'database',
+            class: 'data',
             level: 7
         },
     ];
@@ -194,7 +194,7 @@ app.controller('SkillsController', ['$scope', 'skills', function($scope, skills)
         for(i=0;i<indices.length;i++){
             $scope.addSkill(indices[i]);
         }
-        $scope.viewSkills = sortByKey($scope.viewSkills, 'level');
+        //$scope.viewSkills = sortByKey($scope.viewSkills, 'level');
     }
 
     function getIndexByKey(key, keyArray){
