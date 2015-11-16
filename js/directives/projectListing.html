@@ -8,6 +8,6 @@
 
 		<h4>{{ listing.name }}</h4>
 		<hr class="project">
-		<p>{{ listing.description }}</p>
+		<p ng-repeat="par in listing.description">{{par}}</p>
 	</div>
 </div>
