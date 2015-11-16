@@ -1,6 +1,6 @@
 app.controller('ProjectsController', ['$scope', function($scope){
     $scope.description = 'In my spare time, I try to keep active to keep my skills updated ' +
-    					'and keeping with current trends. Below are some examples of what I am doing.'
+    					'and keeping with current trends. Below are some examples of what I am working on.'
     $scope.tech = [
 		{
 			name: 'Django',
@@ -32,7 +32,7 @@ app.controller('ProjectsController', ['$scope', function($scope){
 				'For my final year project I created an Android application which allows the ' +
 				'parent to track their children\'s progress in national or secondary school. ' +
 				'The application provides a real-time representation of the progress being made by the student.' +
-				'The system utilizes technologies such as MySQL, Apache HTTP Server, PHP and JSON'
+				'The system utilizes technologies such as MySQL, Apache HTTP Server, PHP and JSON.'
 			]
 		}
 	];
