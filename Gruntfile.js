@@ -4,7 +4,7 @@ module.exports = function(grunt){
         watch: {
             css: {
                 files: ['css/*.css', 'css/*.scss'],
-                tasks: ['sass'],
+                tasks: ['sass', 'cssmin'],
             },
         },
         sass: {
@@ -13,10 +13,18 @@ module.exports = function(grunt){
                     'css/style.css': 'css/style.scss',
                 }
             }
+        },
+        cssmin: {
+            target: {
+                files: {
+                    'css/style.min.css': ['css/style.css']
+                }
+            }
         }
     });
 
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-sass');
-    grunt.registerTask('default', ['watch', 'sass']);
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.registerTask('default', ['watch', 'sass', 'cssmin']);
 };
