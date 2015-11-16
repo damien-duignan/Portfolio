@@ -297,9 +297,12 @@ html, body {
    	margin-left: auto;
    	margin-right: auto;
 }*/
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   #body .container {
     width: 65%; } }
+@media (min-width: 1500px) {
+  #body .container {
+    width: 1000px; } }
 hr {
   margin: 40px 0px;
   border-color: #727878;
