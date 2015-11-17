@@ -212,6 +212,9 @@ html {
 #projects h4 {
   font-weight: bold;
   font-style: italic; }
+#projects a {
+  text-decoration: none;
+  color: #DF4446; }
 
 html, body {
   height: 100%; }

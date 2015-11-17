@@ -8,6 +8,6 @@
 
 		<h4>{{ listing.name }}</h4>
 		<hr class="project">
-		<p ng-repeat="par in listing.description">{{par}}</p>
+		<p ng-repeat="par in listing.description" ng-bind-html="par | sanitize"></p>
 	</div>
 </div>

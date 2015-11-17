@@ -6,14 +6,19 @@ app.controller('ProjectsController', ['$scope', function($scope){
 			name: 'Django',
 			description: [
 				'Django is an open source MVC framework written and developed in Python. ' +
-				'It comes wth a lot of built in features to aid in the set up of your web application.'
+				'It comes wth a lot of built in features to aid in the set up of your web application. ',
+				'I am currently working through some books on Python & Django - <a href="http://' +
+				'twoscoopspress.org/products/two-scoops-of-django-1-8">Two Scoops of Django</a>' +
+				' and <a href="http://chimera.labs.oreilly.com/books/1234000000754">Test Driven Development with Python</a>.'
 			]
 		},
 		{
 			name: 'AngularJS',
 			description: [
 				'AngularJS is an open source MVC JavaScript Framework maintained by Google. ' +
-				'It provides client-side MVC architectures, which aid in the development of single page applications.'
+				'It provides client-side MVC architectures, which aid in the development of single page applications.',
+				'This site is built on the AngularJS framework. I plan to create some more simple web applications using' +
+				' AngularJS to broaden my knowledge.'
 			]
 		},
 		{
@@ -21,6 +26,8 @@ app.controller('ProjectsController', ['$scope', function($scope){
 			description: [
 				'Bootstrap is a responsive design framework built by Twitter. It simplifies the ' +
 				'creation of responsive websites.',
+				'I have learned the fundamentals of Responsive Design with Bootstrap, and I\'ll be creating more ' +
+				'responsive websites in the coming months.'
 			]
 		}
 	];
