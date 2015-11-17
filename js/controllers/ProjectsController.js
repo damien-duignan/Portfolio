@@ -17,7 +17,7 @@ app.controller('ProjectsController', ['$scope', function($scope){
 			description: [
 				'AngularJS is an open source MVC JavaScript Framework maintained by Google. ' +
 				'It provides client-side MVC architectures, which aid in the development of single page applications.',
-				'This site is built on the AngularJS framework. I plan to create some more simple web applications using' +
+				'This site is built on the AngularJS framework. I plan to create more web applications using' +
 				' AngularJS to broaden my knowledge.'
 			]
 		},
