@@ -6,7 +6,7 @@ app.controller('ProjectsController', ['$scope', function($scope){
 			name: 'Django',
 			description: [
 				'Django is an open source MVC framework written and developed in Python. ' +
-				'It comes wth a lot of built in features to aid in the set up of your web application. ',
+				'It comes with a lot of built in features to aid in the set up of your web application. ',
 				'I am currently working through some books on Python & Django - <a href="http://' +
 				'twoscoopspress.org/products/two-scoops-of-django-1-8">Two Scoops of Django</a>' +
 				' and <a href="http://chimera.labs.oreilly.com/books/1234000000754">Test Driven Development with Python</a>.'
