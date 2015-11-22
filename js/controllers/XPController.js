@@ -1,7 +1,7 @@
 app.controller('XPController', ['$scope', function($scope){
     $scope.jobs = [
         {
-            company: 'AirG',
+            company: 'airG',
             title: 'Full time',
             role: 'Integrations Engineer',
             location: 'Dublin, Ireland',
@@ -11,7 +11,7 @@ app.controller('XPController', ['$scope', function($scope){
             endDate: 'Present',
             description: [
                 'airG is a Canadian software company headquartered in Vancouver, British Columbia. Its products include telecom software, a social networking service designed for mobile use, and a suite of multiplayer mobile games and applications.',
-                'As part of the airG Ireland team, I am responsible for the integration and maintenance of our products and services across the EMEA and Africa region.',
+                'As part of the airG Ireland team, I am responsible for the integration and maintenance of our products and services across the EMEA region.',
                 'The main priority is integrations. A typical integration would involve gathering requirements from our clients, design and planning stage, ' +
                 'implementation, and lastly, end to end testing.',
                 'In addition to working on larger integrations projects, I am regularly making changes to improve our services by implementing and sometimes designing new features.'

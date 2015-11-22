@@ -39,7 +39,7 @@ app.controller('ProjectsController', ['$scope', function($scope){
 				'For my final year project I created an Android application which allows the ' +
 				'parent to track their children\'s progress in national or secondary school. ' +
 				'The application provides a real-time representation of the progress being made by the student.' +
-				'The system utilizes technologies such as MySQL, Apache HTTP Server, PHP and JSON.'
+				'The system uses technologies such as MySQL, Apache HTTP Server, PHP and JSON.'
 			]
 		}
 	];
